@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+  .demo{
+    border: 2px solid black;
+    border-spacing: 10px;
+   
+  }
+
+  .demo th,
+  .demo td {
+    border: 1px solid blue;
+    padding: 15px;
+  }
+</style>
+</head>
+<body>
+   <h3><u>Task-1 [unordered and ordered lists. Create shopping list and steps list]</u></h3>
+   
+
+    <h4>Shopping List</h4>
+    <ul>
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Banana</li>
+    </ul>
+
+    <h4>Steps to Make a Sandwich</h4>
+    <ol>
+        <li>Get two slices of bread</li>
+        <li>Spread peanut butter on one slice</li>
+        <li>Spread jelly on the other slice</li>
+        <li>Put the slices together with the spreads facing each other</li>
+    </ol>   
+    <hr>
+
+    <h3> <u> Task 2 [nested lists (list inside another list)]</u></h3>
+    <!-- Practice using <li> inside <ul> and <ol>. Create nested lists (list inside another list) -->
+    <ul>
+        <li>Fruits
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Orange</li>
+            </ul>
+        </li>
+        <li>Vegetables
+            <ul>
+                <li>Carrot</li>
+                <li>Broccoli</li>
+                <li>Spinach</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h4>Types of ordered lists</h4>
+    <ol>
+        <li>Default (1, 2, 3...)</li>
+        <li>Lowercase letters (a, b, c...)</li>
+        <li>Uppercase letters (A, B, C...)</li>
+        <li>Lowercase Roman numerals (i, ii, iii...)</li>
+        <li>Uppercase Roman numerals (I, II, III...)</li>
+    </ol>
+
+    <h4>starts from 4</h4>
+    <ol type="a" start="4">
+        <li>orange</li>
+        <li>apple</li>
+        <li>banana</li>
+        <li>grape</li>
+        <li>kiwi</li>
+    </ol>
+<ol type="A">
+    <li>orange</li>
+    <li>apple</li>
+    <li>banana</li>
+    <li>grape</li>
+    <li>kiwi</li>
+</ol>
+
+<ol type="I">
+    <li>orange</li>
+    <li>apple</li>
+    <li>banana</li>
+    <li>grape</li>
+    <li>kiwi</li>
+</ol>
+
+<ol type="i">
+    <li>orange</li>
+    <li>apple</li>
+    <li>banana</li>
+    <li>grape</li>
+    <li>kiwi</li>
+</ol>
+
+<h4>unordered list types</h4>
+
+<ul>
+    <li type="circle">joy</li>
+    <li type="square">peace</li>
+    <li type="disc">love</li>
+    <li type="none">happiness</li>
+</ul>
+
+
+<dl>
+    <dt>Term 1</dt>
+    <dd>Definition 1</dd>
+    <dt>Term 2</dt>
+    <dd>Definition 2</dd>
+</dl>
+<hr>
+<h3><u>Task 3 [structure of tables. a simple table with rows and columns]</u></h3>
+
+
+<table border="1">
+    <tr>
+        <th>Head 1</th>
+        <th>Head 2</th>
+        <th>Head 3</th>
+    </tr>
+
+    <tr>
+        <td>orange</td>
+        <td>apple</td>
+        <td>banana</td>
+    </tr>
+
+    <tr>
+        <td>banana</td>
+        <td>apple</td>
+        <td>orange</td>
+    </tr>
+
+</table>
+
+<hr>
+<h3><u>Task 4 [tables using 'th'. Compare difference between 'td' and 'th']</u></h3>
+
+<caption>Person Details</caption>
+
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+    </tr>
+
+    <tr>
+        <td>Hemna</td>
+        <td>24</td>
+        <td>chennai</td>
+    </tr>    
+
+    <tr>
+        <td>louis</td>
+        <td>22</td>
+        <td>chennai</td>
+    </tr>
+
+<tr>
+    <td>franklin</td>
+    <td>22</td>
+    <td>madurai</td>
+</tr>
+
+</table>
+<hr>
+
+<h3><u>Task 5 [colspan, rowspan, and add borders, cell spacing, and padding with CSS]</u></h3>
+
+
+<table border="1">
+    <tr>
+        <th colspan="2">student Details</th>
+        <th>city</th>
+    </tr>
+    <tr>
+        <td>Arun</td>
+        <td>22</td>
+        <td>chennai</td>
+    </tr>
+</table>
+<br>
+<br>
+
+<table border="1">
+    <tr>
+        <th color="red">city</th>
+        <th>student name</th>
+    </tr>
+    
+    <tr>
+        <td rowspan="2">chennai</td>
+        <td>Arun</td>
+    </tr>
+    <tr>
+        <td>vicky</td>
+    </tr>
+</table>
+
+
+<br>
+
+<h3 align="right">Student Details</h3>
+<table class="demo" border="1" align="right">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+    </tr>
+
+    <tr>
+        <td>Hemna</td>
+        <td>24</td>
+        <td>chennai</td>
+    </tr>    
+
+    <tr>
+        <td>louis</td>
+        <td>22</td>
+        <td>chennai</td>
+    </tr>
+
+<tr>
+    <td>franklin</td>
+    <td>22</td>
+    <td>madurai</td>
+</tr>
+
+
+
+
+</table>
+   
+
+</body>
+</html>
