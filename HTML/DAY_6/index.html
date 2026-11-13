@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 - HTML Form & Global Attributes</title>
+</head>
+<body>
+
+    <h1>Day 6 - HTML Form Attributes & Global Attributes</h1>
+
+    <h2>1. HTML Iframe</h2>
+
+    <p><b>Definition:</b> The iframe tag is used to display another webpage inside the current webpage.</p>
+
+    <p><b>Purpose:</b> Used to embed YouTube videos, Google Maps and other webpages.</p>
+
+    <h3>Example: YouTube Video</h3>
+
+
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/jNQXAC9IVRw"
+        title="YouTube Video"
+        allowfullscreen>
+    </iframe>
+
+
+
+
+    <h3>Example: Google Maps</h3>
+
+    <iframe
+        src="https://www.google.com/maps?q=Chennai&output=embed"
+        width="560"
+        height="315"
+        title="Google Maps">
+    </iframe>
+
+    <hr>
+
+    <h2>2. HTML Embed Tag</h2>
+
+    <p><b>Definition:</b> The embed tag is used to include external content such as PDF files and other media.</p>
+
+    <h3>Example: Embed PDF</h3>
+
+ h2>PDF Using Embed Tag</h2>
+
+     <embed
+        src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+        type="application/pdf"
+        width="600"
+        height="400">
+
+    <hr>
+
+    <h2>3. HTML Object Tag</h2>
+
+    <p><b>Definition:</b> The object tag is used to embed external resources such as PDFs and multimedia files.</p>
+
+    <h3>Example: Display PDF</h3>
+
+       <object
+        data="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+        type="application/pdf"
+        width="600"
+        height="400">
+    </object>
+
+        <p>Your browser cannot display this PDF.</p>
+
+ 
+
+    <hr>
+
+    <h2>4. Favorite Movies</h2>
+
+    <h3>My Favorite Movies List</h3>
+
+    <ol>
+        <li>Interstellar</li>
+        <li>Inception</li>
+        <li>Avengers: Endgame</li>
+        <li>Vikram</li>
+        <li>Leo</li>
+    </ol>
+
+    <h3>Movie Details Table</h3>
+
+    <table border="1">
+        <tr>
+            <th>Movie Name</th>
+            <th>Language</th>
+            <th>Genre</th>
+            <th>Year</th>
+        </tr>
+
+        <tr>
+            <td>Interstellar</td>
+            <td>English</td>
+            <td>Sci-Fi</td>
+            <td>2014</td>
+        </tr>
+
+        <tr>
+            <td>Inception</td>
+            <td>English</td>
+            <td>Thriller</td>
+            <td>2010</td>
+        </tr>
+
+        <tr>
+            <td>Vikram</td>
+            <td>Tamil</td>
+            <td>Action</td>
+            <td>2022</td>
+        </tr>
+
+        <tr>
+            <td>Leo</td>
+            <td>Tamil</td>
+            <td>Action</td>
+            <td>2023</td>
+        </tr>
+    </table>
+
+    <h3>Movie Trailer</h3>
+
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/watch?v=CbLTeD-Rfug"
+        title="Interstellar Trailer">
+    </iframe>
+
+    <hr>
+
+    <h2>5. HTML Forms</h2>
+
+    <p><b>Definition:</b> The form tag is used to collect information from users.</p>
+
+    <p><b>Purpose:</b> Forms are used for login, registration and contact pages.</p>
+
+    <form action="#" method="post">
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <hr>
+
+    <h2>6. HTML Input Types</h2>
+
+    <h3>A. Text Input</h3>
+
+    <input type="text" placeholder="Enter your name">
+
+    <h3>B. Password Input</h3>
+
+    <input type="password" placeholder="Enter password">
+
+    <h3>C. Email Input</h3>
+
+    <input type="email" placeholder="Enter email">
+
+    <h3>Login Form</h3>
+
+    <form action="#" method="post">
+
+        <label for="login-email">Email:</label>
+        <input type="email" id="login-email" name="email" placeholder="Enter email">
+
+        <br><br>
+
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" name="password" placeholder="Enter password">
+
+        <br><br>
+
+        <input type="submit" value="Login">
+
+    </form>
+
+    <hr>
+
+    <h2>7. Checkbox, Radio Button and Number</h2>
+
+    <h3>A. Checkbox</h3>
+
+    <p>Used to select multiple options.</p>
+
+    <input type="checkbox" id="reading" name="hobby" value="reading">
+    <label for="reading">Reading</label><br>
+
+    <input type="checkbox" id="sports" name="hobby" value="sports">
+    <label for="sports">Sports</label><br>
+
+    <input type="checkbox" id="music" name="hobby" value="music">
+    <label for="music">Music</label>
+
+    <h3>B. Radio Button</h3>
+
+    <p>Used to select only one option.</p>
+
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+
+    <h3>C. Number Input</h3>
+
+    <input type="number" min="18" max="60" placeholder="Enter age">
+
+    <hr>
+
+    <h2>8. Label and Placeholder</h2>
+
+    <h3>Label</h3>
+
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname">
+
+    <h3>Placeholder</h3>
+
+    <input type="text" placeholder="Enter your city">
+
+    <hr>
+
+    <h2>9. Required Attribute</h2>
+
+    <p>Required makes an input field compulsory.</p>
+
+    <form action="#" method="post">
+
+        <label for="signup-name">Name:</label>
+        <input type="text" id="signup-name" name="name" required>
+
+        <br><br>
+
+        <label for="signup-email">Email:</label>
+        <input type="email" id="signup-email" name="email" required>
+
+        <br><br>
+
+        <label for="signup-password">Password:</label>
+        <input type="password" id="signup-password" name="password" required>
+
+        <br><br>
+
+        <input type="submit" value="Sign Up">
+
+    </form>
+
+    <hr>
+
+    <h2>10. HTML5 Form Validation</h2>
+
+    <p>HTML5 validation checks user input before form submission.</p>
+
+    <form action="#" method="post">
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="60" required>
+
+        <br><br>
+
+        <label for="validation-email">Email:</label>
+        <input type="email" id="validation-email" name="email" required>
+
+        <br><br>
+
+        <label for="user">Username:</label>
+        <input type="text" id="user" name="username" minlength="4" maxlength="12" required>
+
+        <br><br>
+
+        <input type="submit" value="Validate">
+
+    </form>
+
+    <hr>
+
+    <h2>11. Complete Registration Form</h2>
+
+    <form action="#" method="post">
+
+        <label for="regname">Full Name:</label>
+        <input type="text" id="regname" name="fullname" placeholder="Enter full name" required>
+
+        <br><br>
+
+        <label for="regemail">Email:</label>
+        <input type="email" id="regemail" name="email" placeholder="Enter email" required>
+
+        <br><br>
+
+        <label for="regpass">Password:</label>
+        <input type="password" id="regpass" name="password" placeholder="Enter password" minlength="6" required>
+
+        <br><br>
+
+        <p>Gender:</p>
+
+        <input type="radio" id="regmale" name="gender" value="male" required>
+        <label for="regmale">Male</label><br>
+
+        <input type="radio" id="regfemale" name="gender" value="female">
+        <label for="regfemale">Female</label><br>
+
+        <input type="radio" id="regother" name="gender" value="other">
+        <label for="regother">Other</label>
+
+        <p>Hobbies:</p>
+
+        <input type="checkbox" id="regreading" name="hobbies" value="reading">
+        <label for="regreading">Reading</label><br>
+
+        <input type="checkbox" id="regsports" name="hobbies" value="sports">
+        <label for="regsports">Sports</label><br>
+
+        <input type="checkbox" id="regmusic" name="hobbies" value="music">
+        <label for="regmusic">Music</label>
+
+        <br><br>
+
+        <label for="regage">Age:</label>
+        <input type="number" id="regage" name="age" min="18" max="60" required>
+
+        <br><br>
+
+        <input type="submit" value="Register">
+
+    </form>
+
+    <hr>
+
+    <footer>
+        <h3>HTML Learning Notes</h3>
+        
+    </footer>
+
+</body>
+</html>
