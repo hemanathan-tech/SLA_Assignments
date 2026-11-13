@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day 5 </title>
+</head>
+<body>
+
+    <h1>Day 5 - HTML Forms</h1>
+
+    <h2>1. Introduction to HTML Forms</h2>
+
+    <p><b>Definition:</b> The form tag is used to collect user information.</p>
+
+    <p><b>Purpose:</b> Forms are used for login, registration and contact pages.</p>
+
+    <h3>Example:</h3>
+
+    <form action="#" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <h2>2. HTML Input Types</h2>
+
+    <h3>A. Text Input</h3>
+    <p>Used to enter normal text.</p>
+
+    <input type="text" placeholder="Enter your name">
+
+    <h3>B. Password Input</h3>
+    <p>Used to enter passwords.</p>
+
+    <input type="password" placeholder="Enter password">
+
+    <h3>C. Email Input</h3>
+    <p>Used to enter an email address.</p>
+
+    <input type="email" placeholder="Enter email">
+
+    <h3>Login Form Example</h3>
+
+    <form action="#" method="post">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter email">
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password">
+        <br><br>
+
+        <input type="submit" value="Login">
+    </form>
+
+    <hr>
+
+    <h2>3. Checkbox, Radio Button and Number</h2>
+
+    <h3>A. Checkbox</h3>
+    <p>Used to select multiple options.</p>
+
+    <input type="checkbox" id="reading" name="hobby" value="reading">
+    <label for="reading">Reading</label><br>
+
+    <input type="checkbox" id="sports" name="hobby" value="sports">
+    <label for="sports">Sports</label><br>
+
+    <input type="checkbox" id="music" name="hobby" value="music">
+    <label for="music">Music</label>
+
+    <h3>B. Radio Button</h3>
+    <p>Used to select only one option.</p>
+
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+
+    <h3>C. Number Input</h3>
+    <p>Used to enter numeric values.</p>
+
+    <input type="number" min="18" max="60" placeholder="Enter age">
+
+    <hr>
+
+    <h2>4. Label and Placeholder</h2>
+
+    <h3>A. Label</h3>
+    <p>Used to describe an input field.</p>
+
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname">
+
+    <h3>B. Placeholder</h3>
+    <p>Displays a hint inside an input field.</p>
+
+    <input type="text" placeholder="Enter your city">
+
+    <hr>
+
+    <h2>5. Required Attribute</h2>
+
+    <p>Required makes an input field compulsory.</p>
+
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="signup-email">Email:</label>
+        <input type="email" id="signup-email" name="email" required>
+        <br><br>
+
+        <label for="signup-password">Password:</label>
+        <input type="password" id="signup-password" name="password" required>
+        <br><br>
+
+        <input type="submit" value="Sign Up">
+    </form>
+
+    <hr>
+
+    <h2>6. HTML5 Form Validation</h2>
+
+    <p>HTML5 validation checks user input before form submission.</p>
+
+    <form action="#" method="post">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="60" required>
+        <br><br>
+
+        <label for="validation-email">Email:</label>
+        <input type="email" id="validation-email" name="email" required>
+        <br><br>
+
+        <label for="user">Username:</label>
+        <input type="text" id="user" name="username" minlength="4" maxlength="12" required>
+        <br><br>
+
+        <input type="submit" value="Validate">
+    </form>
+
+    <hr>
+
+    <h2>7. Complete Registration Form</h2>
+
+    <form action="#" method="post">
+
+        <label for="regname">Full Name:</label>
+        <input type="text" id="regname" name="fullname" placeholder="Enter full name" required>
+        <br><br>
+
+        <label for="regemail">Email:</label>
+        <input type="email" id="regemail" name="email" placeholder="Enter email" required>
+        <br><br>
+
+        <label for="regpass">Password:</label>
+        <input type="password" id="regpass" name="password" placeholder="Enter password" minlength="6" required>
+        <br><br>
+
+        <p>Gender:</p>
+
+        <input type="radio" id="regmale" name="gender" value="male" required>
+        <label for="regmale">Male</label><br>
+
+        <input type="radio" id="regfemale" name="gender" value="female">
+        <label for="regfemale">Female</label><br>
+
+        <input type="radio" id="regother" name="gender" value="other">
+        <label for="regother">Other</label>
+
+        <p>Hobbies:</p>
+
+        <input type="checkbox" id="regreading" name="hobbies" value="reading">
+        <label for="regreading">Reading</label><br>
+
+        <input type="checkbox" id="regsports" name="hobbies" value="sports">
+        <label for="regsports">Sports</label><br>
+
+        <input type="checkbox" id="regmusic" name="hobbies" value="music">
+        <label for="regmusic">Music</label>
+
+        <br><br>
+
+        <label for="regage">Age:</label>
+        <input type="number" id="regage" name="age" min="18" max="60" required>
+
+        <br><br>
+
+        <input type="submit" value="Register">
+
+    </form>
+
+    <hr>
+
+    <footer>
+        <h3>Day 5 - HTML Forms</h3>
+        <p>Learn | Practice | Build | Repeat</p>
+    </footer>
+
+</body>
+</html>
